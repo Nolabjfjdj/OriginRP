@@ -15,4 +15,4 @@ RUN chmod +x /backup.sh /restore.sh /start.sh
 
 EXPOSE 25565
 
-CMD ["/start.sh"]
+ENTRYPOINT ["/start.sh"]
