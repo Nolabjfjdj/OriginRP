@@ -1,3 +1,4 @@
+# OriginRP Server
 FROM itzg/minecraft-server:java8-jdk
 
 ENV EULA=TRUE
