@@ -17,6 +17,9 @@ RUN chmod +x /backup.sh /restore.sh /start.sh
 RUN mkdir -p /plugins
 COPY plugins/ /plugins/
 
+# Monde pré-généré
+COPY world.zip /world.zip
+
 EXPOSE 25565
 
 ENTRYPOINT ["/start.sh"]
