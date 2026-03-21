@@ -4,7 +4,7 @@ FROM itzg/minecraft-server:java17
 ENV EULA=TRUE
 ENV TYPE=PAPER
 ENV VERSION=1.12.2
-ENV MEMORY=512m
+ENV MEMORY=2048m
 
 COPY rclone.conf /rclone.conf
 COPY backup.sh /backup.sh
