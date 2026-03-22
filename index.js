@@ -22,7 +22,7 @@ return Math.floor(Math.random() * (AFK_MAX - AFK_MIN + 1)) + AFK_MIN
 function createBot() {
 if (isConnecting || reconnectTimer) return
 isConnecting = true
-console.log(’[Bot] Connexion a ’ + HOST + ‘:’ + PORT + ‘…’)
+console.log('[Bot] Connexion a ' + HOST + ':' + PORT + '...')
 
 bot = mineflayer.createBot({
 host: HOST,
@@ -118,7 +118,7 @@ bot = null
 
 function scheduleReconnect() {
 if (reconnectTimer) return
-console.log(’[Bot] Reconnexion dans ’ + (RECONNECT_DELAY / 1000) + ‘s…’)
+console.log('[Bot] Reconnexion dans ' + (RECONNECT_DELAY / 1000) + 's...')
 reconnectTimer = setTimeout(function() {
 reconnectTimer = null
 createBot()
